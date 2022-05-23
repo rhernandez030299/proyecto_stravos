@@ -1,0 +1,560 @@
+body {
+    font-family: 'Poppins';
+}
+
+table {
+    width: 100% !important;
+}
+
+.border-gray-200{
+    border: 1px solid #ebedf3!important;
+}
+
+
+/*    MODAL CARGA     */
+
+.modal-carga {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .8) url('../img/loading.gif') 50% 50% no-repeat;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.dropzone {
+    background: #fff;
+    border-style: dashed;
+    border-color: #00BCD4;
+}
+
+#archivos .dz-image img,
+#archivos_update .dz-image img {
+    width: 120px;
+    height: 120px;
+}
+
+.padding-3 {
+    padding: 3px 4px;
+    margin-top: 1px;
+}
+
+.dz-default {
+    display: none
+}
+
+.dz-message i {
+    width: 100%;
+    text-align: center;
+    color: #00BCD4;
+}
+
+.dz-message .text-file {
+    color: #424242 !important;
+}
+
+.pac-container {
+    background-color: #FFF;
+    z-index: 5000;
+    position: fixed;
+    display: inline-block;
+    float: left;
+}
+
+.error {
+    color: #f64e60 !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+}
+
+.is-invalid-select2 {
+    border-color: #f64e60 !important;
+}
+
+.callout-default {
+    background: #fff;
+    border: 2px solid rgba(233, 233, 233, .8);
+    border-radius: 6px;
+    border-left: 10px solid rgba(210, 210, 210, 0.6);
+}
+
+.filtros {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.info-filter>span {
+    white-space: normal;
+    line-height: 2;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal-carga {
+    display: block;
+}
+
+.no-pad-left {
+    padding-left: 0px !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0px !important;
+}
+
+#rutas_asignadas>tbody>tr>td:nth-child(1),
+#puntos_venta_activo_table>tbody>tr>td:nth-child(1) {
+    cursor: pointer;
+}
+
+#rutas_asignadas>tbody>tr>td:nth-child(1):hover,
+#puntos_venta_activo_table>tbody>tr>td:nth-child(1):hover {
+    background: #00a65a;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 1.0em;
+}
+
+.borde-resultados {
+    background: rgba(233, 233, 233, 0.3);
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0px;
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 2px;
+}
+
+.borde-resultados>.col-md-3 {
+    text-align: center;
+}
+
+.sugeridos {
+    display: none;
+}
+
+.sugeridos>button,
+.sugeridos>a {
+    display: none !important;
+}
+
+#sortable,
+#numeros {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#sortable li {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    border: 1px solid rgba(233, 233, 233, 1);
+    background-color: rgba(233, 233, 233, 0.5);
+    cursor: move;
+}
+
+.ui-state-highlight {
+    padding-right: 10px;
+    text-align: right !important;
+}
+
+.border-container-totales {
+    border: 1px solid rgba(233, 233, 233, 0.5);
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.title-precios {
+    background-color: #f7f7f7;
+    font-size: 18px;
+    text-align: center;
+    padding: 7px 10px;
+    margin-top: 0;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #d2d6de;
+}
+
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.info-box-icon {
+    font-size: 35px;
+    height: 55px;
+    line-height: 55px;
+    width: 60px;
+}
+
+.info-box {
+    min-height: 30px;
+}
+
+.info-box-content {
+    margin-left: 60px;
+}
+
+
+/*Check box*/
+
+.formulario .radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #FF4136;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.formulario .radio label:hover {
+    background: rgba(255, 65, 54, 0.1);
+}
+
+.formulario .radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #FF4136;
+}
+
+.formulario input[type="radio"] {
+    display: none;
+}
+
+.formulario input[type="radio"]:checked+label:before {
+    display: none;
+}
+
+.formulario input[type="radio"]:checked+label {
+    padding: 5px 15px;
+    background: #FF4136;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.cerrar-sesion {
+    color: #fff !important;
+    background-color: #dd4b39 !important;
+    border-color: #d73925;
+    border: 1px solid transparent;
+}
+
+.cambiar-contrasena-general {
+    color: #fff !important;
+    background-color: #3c8dbc !important;
+    border-color: #367fa9;
+    border: 1px solid transparent;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: #3c8dbc;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+}
+
+#imaginary_container {
+    width: 50%;
+    margin: 0px auto;
+    /* Don't copy this */
+    margin-bottom: 20px;
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.comentarios {
+    text-align: justify;
+}
+
+.ocultar-map,
+.ocultar-map-update {
+    display: none;
+}
+
+.checkbox {
+    margin-top: 0px;
+}
+
+.checkbox label {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #0074D9;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.checkbox-dia label {
+    min-width: 40px;
+    max-width: 60px;
+}
+
+.checkbox label:hover {
+    background: rgba(0, 116, 217, 0.1);
+}
+
+.checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #0074D9;
+}
+
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"]:checked+label:before {
+    display: none;
+}
+
+.checkbox input[type="checkbox"]:checked+label {
+    background: #0074D9;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.separador-top {
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+}
+
+.jstree-children a i {
+    padding-right: 10px !important;
+}
+
+
+/*-------------------------------*/
+
+
+/*------------FASES--------------*/
+
+.container-elementos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-elementos {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    padding: 1rem 26px;
+    background: #fff;
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor-titulo {
+    width: 70%;
+}
+
+.contenedor-boton {
+    width: 30%;
+    text-align: right;
+}
+
+.contenedor-elementos .contenedor-titulo .titulo {
+    margin-top: 10px;
+    letter-spacing: .01785714em;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #3c4043;
+}
+
+.contenedor-elementos .contenedor-titulo .descripcion {
+    margin-top: 10px;
+    letter-spacing: .01785714em;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #444;
+}
+
+.contenedor-elementos .contenedor-titulo .estado {
+    font-size: 16px;
+}
+
+
+/*----------FIN FASES ---------------*/
+
+.evidencia img {
+    width: 100%;
+}
+
+.evidencia label {
+    word-break: break-all;
+}
+
+.hide {
+    display: none;
+}
+
+table .btn i,
+.btn i {
+    padding-right: 0px;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.border-rgba {
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+
+.toggle-not-arrow::after {
+    margin-left: 0px !important;
+    content: "" !important;
+}
+
+.nav.nav-pills .nav-success-project .nav-link.active{
+    color: #fff;
+    background-color: #f64e60;
+}
+
+/*Check box*/
+
+@media only screen and (max-width: 800px) {
+    html,
+    body {
+        font-size: 17px;
+    }
+    table .btn {
+        display: block;
+        width: 100%;
+        margin-top: 0.5em;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    .box-tools {
+        position: relative !important;
+    }
+    table thead {
+        display: none;
+    }
+    tr.xs-block td,
+    tr.xs-block th {
+        display: block;
+        margin-bottom: 0.3em;
+    }
+    tr.xs-block td .btn {
+        display: block;
+        width: 100%;
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+    }
+    tr.xs-block td .btn:after {
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        display: inline-block;
+        content: attr(title);
+    }
+    tr.xs-block td:before,
+    tr.xs-block th:before {
+        text-align: left;
+        font-weight: bold;
+        display: block;
+        content: attr(data-title);
+    }
+    tr.xs-block {
+        display: block;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1em!important;
+        -webkit-box-shadow: 2px 2px 1px 0 #dadada;
+        box-shadow: 2px 2px 1px 0 #dadada;
+    }
+    .dataTables_filter {
+        text-align: left !important;
+    }
+    table {
+        border: none !important;
+    }
+    .table-responsive {
+        border: none;
+    }
+    .sugeridos:before,
+    .ultimo_dia:before,
+    .ultima_semana:before {
+        text-align: center !important;
+    }
+    .sugeridos,
+    .ultimo_dia,
+    .ultima_semana {
+        background: #fff;
+    }
+    .total-detalle-volante,
+    .total-detalle-ptv {
+        text-align: left !important;
+    }
+    #imaginary_container {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

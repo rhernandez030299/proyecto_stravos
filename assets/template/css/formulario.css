@@ -1,0 +1,9 @@
+.boton-agregar-pregunta{
+  position: absolute;
+  right: -60px;
+}
+
+.card-active{
+  box-shadow: 0 0 30px 0 rgba(82, 63, 105, .05);  
+  border-left: 10px solid #3699ff;
+}

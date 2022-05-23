@@ -1,0 +1,11 @@
+div.error div.message{
+	margin-top: 5em;
+	margin-bottom: 5em;
+	text-align: center;	
+	padding: 1em;
+}
+
+div.error div.banner-bot{
+	margin-bottom: 5em;
+}
+
